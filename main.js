@@ -1,0 +1,1 @@
+alert("Mimir is up and running")
