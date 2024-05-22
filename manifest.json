@@ -1,11 +1,14 @@
 {
-    "manifest_version":2,
-    "version":"1.0",
-    "name":"Mimir",
-    "content_scripts":[
-      {
-       "matches":["*://chatgpt.com/c/*"],
+    "manifest_version": 3,
+    "version": "1.0",
+    "name": "Mimir",
+    "description":  "A browser extension to validate factual responses provided by famous LLMs",
+    "content_scripts": [{
+       "matches":["*://chatgpt.com/*"],
        "js":["main.js"]
-      }
+    }],
+    "permissions": [
+        "activeTab",
+        "scripting"
     ]
 }
